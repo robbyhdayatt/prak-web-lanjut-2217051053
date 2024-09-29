@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WLTugas2</title>
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -24,6 +27,8 @@
             border-radius: 15px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            max-width: 400px;
+            width: 100%;
         }
 
         .profile-container:hover {
@@ -46,10 +51,12 @@
             border-radius: 25px;
             font-weight: 600;
             color: #333;
+            transition: background-color 0.3s ease;
         }
 
         .info strong {
             color: #007BFF;
+            font-size: 18px;
         }
 
         .info span {
@@ -57,6 +64,14 @@
             margin-top: 5px;
             font-size: 16px;
             font-weight: 400;
+        }
+
+        .info:hover {
+            background-color: #e0e0e0;
+        }
+
+        .profile-container img:hover {
+            border-color: #007BFF;
         }
     </style>
 </head>
@@ -68,7 +83,7 @@
             <strong>Nama:</strong> <span><?= $nama ?></span>
         </div>
         <div class="info">
-            <strong>Kelas:</strong> <span><?= $kelas ?></span>
+            <strong>Kelas:</strong> <span><?= $nama_kelas ?></span>
         </div>
         <div class="info">
             <strong>NPM:</strong> <span><?= $npm ?></span>
