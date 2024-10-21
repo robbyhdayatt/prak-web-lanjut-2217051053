@@ -10,7 +10,7 @@
                         <h4>Create User</h4>
                     </div>
                     <div class="card-body">
-                        <form action="{{ route('user.store') }}" method="POST" class="needs-validation" novalidate>
+                        <form action="{{ route('user.store') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="mb-4">
                                 <label for="nama" class="form-label">Nama:</label>
@@ -48,6 +48,11 @@
                                         Silakan pilih kelas.
                                     </div>
                                 </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="foto" class="form-label">Foto:</label>
+                                <input class="form-control" type="file" id="foto" name="foto">
                             </div>
 
                             <button type="submit" class="btn btn-primary w-100">Submit</button>
