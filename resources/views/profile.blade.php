@@ -107,7 +107,7 @@
         </div>
         <div class="info">
             <p class="label"><strong>Kelas:</strong></p>
-            <p class="value">{{ $user->nama_kelas ?? 'Kelas Tidak Ditemukan' }}</p>
+            <p class="value">{{ $nama_kelas ?? 'Kelas Tidak Ditemukan' }}</p>
         </div>
     </div>
 </body>
